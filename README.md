@@ -1,2 +1,0 @@
-# WeatherReactApp
-WeatherReactApp
