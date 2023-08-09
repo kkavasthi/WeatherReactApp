@@ -1,13 +1,78 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
 }
+
+.App{
+    background-image: url('./Assests/weatherbackground.jpg');
+    background-position: bottom;
+    background-size: cover;
+    transition: 0.4 ease-out;
+}
+
+main{
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.75));
+  padding:  25px;
+}
+
+.search-box {
+  width: 100%;
+  margin: 0 0 75px;
+}
+
+.search-box .search-bar{
+  display: block;
+  width: 20%;
+  padding: 15px;
+  margin-top: -25px;
+
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 16px 16px 16px 16px;
+  margin-top: -25px;
+
+  box-shadow: 0px 5px rgba(0,0,0,0.2);
+
+  color: #313131;
+  font-size: 20px;
+
+  transition: 0.4s ease;
+}
+
+.search-box .search-bar:focus{
+  background-color: rgba(255, 255, 255, 0.75);
+} 
+
+.response-field {
+  font-size: 24px; /* Adjust the font size as per your preference */
+  margin: 20px; /* Add some margin around the response field */
+}
+
+.button{
+  display: block;
+  width: 70%;
+  padding: 15px;
+  font-size: 20px;
+  margin-left: 450px;
+  margin-top: -50px;
+}
+.pipeline{
+  padding: 0 5px;
+  margin-top: -25px;
+  color: blueviolet;
+  width: max-content;
+
+}
+
